@@ -29,6 +29,7 @@ python3 example.py --objecttype json --indextype hnsw --metrictype cosine
 ### Output
 
 Vector Query
+
 Query Vector Image ID:58452
 
 |    ID |   Score |
@@ -40,6 +41,7 @@ Query Vector Image ID:58452
 | 22945 |    0.24 |
 
 Hybrid Query
+
 Query Vector Image ID:58452
 
 Hybrid Query String: 2107|2656|25155|40953|34242
