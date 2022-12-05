@@ -18,7 +18,6 @@ from enum_actions import enum_action
 IMAGE_DIR: str = 'data/images'               # directory of images
 VECTOR_FILE: str = 'data/vectors.json'       # JSON file containing image ids and their embeddings
 NUM_IMAGES: int = 100                        # Number of images to be vectorized from the image dir
-FILTER_SIZE: int = 2                         # Number of image IDs to be used in the hybrid query
 TOPK: int = 5                                # Number of results to be returned from the VSS query
 REDIS_URL: str = 'redis://localhost:6379'  
 
@@ -40,7 +39,6 @@ class SEARCH_TYPE(Enum):
     HYBRID = 'hybrid'
 
 class VSS(object):
-    #def __init__(self, url, object_type, index_type, metric_type):
     def __init__(self, args):
         self.connection: Connection = from_url(args.url)
         self.object_type: OBJECT_TYPE = args.objecttype
@@ -196,7 +194,6 @@ if __name__ == '__main__':
         help='Redis VSS Metric Type')
     args = parser.parse_args()
 
-    #vss = VSS(REDIS_URL, OBJECT_TYPE.JSON, INDEX_TYPE.HNSW, METRIC_TYPE.L2)
     vss: VSS = VSS(args)
     id, vector = vss.randomImage()
     
