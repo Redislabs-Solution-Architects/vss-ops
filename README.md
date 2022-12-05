@@ -5,7 +5,7 @@ Examples of Vector Similarity Search (VSS) in Python
 ## Prerequisites
 - Python
 - Download of images from Kaggle site - https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset
-- RediSearch 2.6/Redis JSON 2.4.  Dockerfile included will build a workable environment.
+- RediSearch 2.6/Redis JSON 2.4.  
 fashion-product-images-dataset
 ## Installation
 1. Clone this repo.
