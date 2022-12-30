@@ -81,7 +81,7 @@ class VSS(object):
                         self.image_dict[id] = obj['image_vector']  
 
     def _load_db(self) -> None:
-        """ Loads Redis with hash sets containing image embeddings.  Creates an index containing a Vector field for the embedding
+        """ Loads Redis with JSON documents or hash sets containing image embeddings.  Creates an index containing a Vector field for the embedding
             and a user-specified text or tag field for the image id.
         """ 
         self.connection.flushdb()

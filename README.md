@@ -1,5 +1,8 @@
 # VSS Examples
-Examples of Vector Similarity Search (VSS) in Python 
+Examples of Vector Similarity Search (VSS) in Python
+## Blog
+https://joeywhelan.blogspot.com/2022/12/redis-vector-similarity-search.html
+ 
 ## Features
 - Provides examples of how to conduct straight vector and hybrid VSS searches.
 ## Prerequisites
